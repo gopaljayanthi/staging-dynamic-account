@@ -1,0 +1,40 @@
+    kubernetes:
+      enabled: true
+      accounts:
+      - name: demo-opsmx 
+        requiredGroupMembership: []
+        providerVersion: V2
+        permissions: {}
+        dockerRegistries:
+        - accountName: dockerhub
+          namespaces: []
+        context: default
+        kubeconfigFile: configserver:kubecfgsDir/k8s_demo-opsmx.cfg
+        configureImagePullSecrets: true
+        serviceAccount: true
+        cacheThreads: 1
+        namespaces: 
+        - default
+        omitNamespaces: []
+        kinds: []
+        omitKinds: []
+        customResources: []
+        cachingPolicies: []
+        oAuthScopes: []
+        onlySpinnakerManaged: true
+     - name: defaultAccount
+       requiredGroupMembership: []
+       providerVersion: V2
+       permissions: {}
+       dockerRegistries: []
+       configureImagePullSecrets: true
+       cacheThreads: 1
+       namespaces: []
+       omitNamespaces: []
+       kinds: []
+       omitKinds: []
+       customResources: []
+       cachingPolicies: []
+       kubeconfigFile: configserver:kubecfgsDir/k8s_defaultAccount.cfg
+       oAuthScopes: []
+       onlySpinnakerManaged: false
