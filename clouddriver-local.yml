@@ -1,7 +1,7 @@
     kubernetes:
       enabled: true
       accounts:
-      - name: demo-opsmx 
+      - name: testk8s-account 
         requiredGroupMembership: []
         providerVersion: V2
         permissions: {}
@@ -9,7 +9,7 @@
         - accountName: dockerhub
           namespaces: []
         context: default
-        kubeconfigFile: configserver:kubecfgsDir/k8s_demo-opsmx.cfg
+        kubeconfigFile: configserver:kubecfgsDir/k8s_testk8s.cfg
         configureImagePullSecrets: true
         serviceAccount: true
         cacheThreads: 1
