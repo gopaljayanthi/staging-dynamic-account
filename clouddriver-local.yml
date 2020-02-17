@@ -22,19 +22,19 @@
         cachingPolicies: []
         oAuthScopes: []
         onlySpinnakerManaged: true
-     - name: defaultAccount
-       requiredGroupMembership: []
-       providerVersion: V2
-       permissions: {}
-       dockerRegistries: []
-       configureImagePullSecrets: true
-       cacheThreads: 1
-       namespaces: []
-       omitNamespaces: []
-       kinds: []
-       omitKinds: []
-       customResources: []
-       cachingPolicies: []
-       kubeconfigFile: configserver:kubecfgsDir/k8s_defaultAccount.cfg
-       oAuthScopes: []
-       onlySpinnakerManaged: false
+      - name: defaultAccount
+        requiredGroupMembership: []
+        providerVersion: V2
+        permissions: {}
+        dockerRegistries: []
+        configureImagePullSecrets: true
+        cacheThreads: 1
+        namespaces: []
+        omitNamespaces: []
+        kinds: []
+        omitKinds: []
+        customResources: []
+        cachingPolicies: []
+        kubeconfigFile: configserver:kubecfgsDir/k8s_defaultAccount.cfg
+        oAuthScopes: []
+        onlySpinnakerManaged: false
